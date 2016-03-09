@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="bs_more" type="id" />
+    <item name="item_view_tag" type="id" />
+    <item name="item_view_tag_a" type="id" />
+    <item name="item_view_tag_b" type="id" />
+    <item name="item_view_tag_position" type="id" />
+    <item name="item_view_tag_offset" type="id" />
+    <item name="item_view_tag_user" type="id" />
+
+    <item name="compose_image_0" type="id" />
+    <item name="compose_image_1" type="id" />
+    <item name="compose_image_2" type="id" />
+    <item name="compose_image_3" type="id" />
+    <item name="compose_image_4" type="id" />
+    <item name="compose_image_5" type="id" />
+    <item name="compose_image_cover" type="id" />
+</resources>

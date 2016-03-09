@@ -1,0 +1,828 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">6度</string>
+    <string name="app_id">487212794762362</string>
+
+    <string name="title_localPhotos">全部图片</string>
+    <string name="title_clip_profile_pic">设置头像</string>
+
+    <!-- 服务器相关 -->
+    <string name="url_add">en</string>
+    <string name="url_api">http://get6deg.com/</string>
+    <!--<string name="url_api">http://192.168.1.88:3000</string>-->
+    <string name="url_log_api">http://log.shiguangxiaowu.cn</string>
+    <string name="account_region">cn</string>
+    <string name="me">我</string>
+
+    <string name="action_settings">设置</string>
+
+    <!-- ActionBar -->
+    <string name="actionBar_selectBtn">选择</string>
+
+    <!-- home tab-->
+    <string name="home_tab_folder">相册</string>
+    <string name="home_tab_album">本地图库</string>
+
+    <!-- 相机 -->
+    <string name="takePhotoToFolder">拍摄照片</string>
+    <string name="camera_open_error">相机出了点问题</string>
+    <string name="camera_save_error">保存失败，再试一次？</string>
+
+    <!-- 分享 -->
+    <string name="qq">QQ</string>
+    <string name="line">Line</string>
+    <string name="wechat">微信</string>
+    <string name="weibo">微博</string>
+    <string name="weiboNotInstall">新浪微博没有安装</string>
+    <string name="sms">短信</string>
+    <string name="sharing">正在分享…</string>
+    <string name="shareToPac">分享到圈子</string>
+    <string name="share_failed">分享失败，请稍后再试</string>
+    <string name="share_picture_title">6度</string>
+    <string name="share_picture_content">分享照片(发自:6度)</string>
+
+    <!-- 详情 -->
+    <string name="seeAll">查看全部</string>
+    <string name="commentPhoto">评论这张照片</string>
+    <string name="commentSbPhoto">评论%s的动态...</string>
+    <string name="commentFail">评论失败，请稍后再试</string>
+    <string name="coments">照片评论</string>
+    <string name="coments_no_empty">你的回复…</string>
+    <string name="caption_hint">照片背后的故事…</string>
+    <string name="coments_reply_to_hint">回复 %s</string>
+    <string name="coments_like">回复%s的赞</string>
+    <string name="enter_homepage">进入%s的主页</string>
+    <string name="coments_to">"%s: "</string>
+    <string name="coments_reply_to">"%1$s 回复 %2$s: "</string>
+    <string name="coments_privacy_to">"%s 私密评论: "</string>
+    <string name="coments_privacy_reply_to">"%1$s 私密回复 %2$s: "</string>
+
+    <string name="modifyDesc">照片描述</string>
+    <string name="pendant">贴图</string>
+    <string name="filter">滤镜</string>
+    <string name="delete">删除</string>
+    <string name="deleteCmt">删除评论</string>
+    <string name="deletePendant">真的要删除这个贴图?</string>
+    <string name="description">描述</string>
+    <string name="publicStr">公开</string>
+    <string name="beautify">美化</string>
+
+
+    <string name="saveDone">Saved to: %s</string>
+    <string name="saveFail">Oops…something went awry</string>
+    <string name="notUploadedTryLater">Please try again after syncing</string>
+    <string name="cancelSelected">Cancel Selected(%d)</string>
+    <string name="removeToRecycle">Move to Trash</string>
+
+    <!-- 文件夹管理 -->
+    <string name="alreadyShare">Shared</string>
+    <string name="createFolder">New Album</string>
+    <string name="newAlbum">New Album</string>
+    <string name="editFolder">Edit Album</string>
+    <string name="addContacts">Add Contact</string>
+    <string name="exitGroup">Leave Group</string>
+    <string name="exitSharedFolder">Leave Shared Album</string>
+    <string name="addSharer">Add Member</string>
+
+    <string name="noFolderTips">"No Albums here. \nCreate one? "</string>
+
+    <string name="folderAddMembersTips">"You can share this Album with \n your family and friends"</string>
+    <string name="modifyFolderIcon">Change Icon</string>
+    <string name="modifyFolderName">Edit Name</string>
+
+    <string name="inputFolderName">Name</string>
+
+    <string name="nullFolderIcon">You have not chosen the album icon.</string>
+    <string name="nullFolderIconColor">You have not chosen the album icon color</string>
+    <string name="nullFolderName">"You don't have a name for the album."</string>
+
+    <string name="folderManage">Album Settings</string>
+    <string name="folderCreate">Add Album</string>
+
+    <string name="folderSelectPictureAsIcon">Use pictures as icons</string>
+    <string name="folderIconTitle">Set album icon</string>
+
+    <string name="folderDefineIcon">Album Icon</string>
+    <string name="folderSelectIcon">Shapes</string>
+    <string name="folderSelectColor">Colors</string>
+
+    <string name="folderSelectCustomIcon">Use Icon</string>
+    <string name="folderSelectPicture">Use Photo</string>
+    <string name="folderShareAccept">Notifications</string>
+
+    <string name="confirmDeleteFolder">"Are you sure you wish to delete \"%s\"?"</string>
+    <string name="exit_folder_done">Exited The Folder</string>
+    <string name="delete_done">Folder was deleted</string>
+
+    <string name="confirmExitSharedFolder">Are you sure to leave this shared album?</string>
+    <string name="folderNameNull">Oops…please name the album</string>
+    <string name="folderNameError">Oops…no invalid symbols</string>
+
+    <string name="folderGuideTips">Select some categories of interest</string>
+    <string name="ffGuideTips">6度也能看到朋友的动态了，发布时\n如果勾选发布到“朋友动态”那么朋友\n也能看到你发布的内容</string>
+    <string name="ffGuideTitle2">朋友动态</string>
+    <string name="chooseCategory">Select Album</string>
+
+    <string name="noGroupTips">"Wanna share some moments with friends? Let\'s start a new Pac"</string>
+    <string name="newPac">New Pac</string>
+
+    <string name="folder_share_after_sync">Oops…please retry after syncing is done</string>
+
+    <string name="folder_edit_done">Succeeded</string>
+    <string name="folder_edit_undone">Failed</string>
+
+    <string name="folder_create_done">Succeeded</string>
+    <string name="folder_create_undone">Failed</string>
+
+    <string name="folder_wait_invite_create">Oops…something went    </string>
+
+    <string name="shared_folder_invited_done">Succeeded</string>
+    <string name="shared_folder_invited_undone">Failed</string>
+
+    <string name="shared_folder_reject_done">Succeeded</string>
+    <string name="shared_folder_reject_undone">Failed</string>
+
+    <!-- 首页 -->
+    <string name="syncing">Synchronizing…</string>
+    <string name="syncingFail">Synchronizing failed</string>
+    <string name="exitTips">Tap again back button to quit</string>
+    <string name="selectedCountTips">%d Selected</string>
+    <string name="confirmDeleteMoment">Are you sure you wish to delete %d photos?</string>
+    <string name="noSelected">Please select item</string>
+    <string name="noPhotosInAlbum">"Looks a little lonely around here \n Lets pac some photos!"</string>
+    <string name="noPhotosInGroup">"Photos can be shared with unregistered \n friends via auto SMS with photo link"</string>
+    <string name="confirmDeleteTrash">Are you sure you want to remove the%d picture completely from the recycle bin?</string>
+    <string name="confirmClearAllTrash">Are you sure you wish to empty Trash?</string>
+
+
+    <string name="msgCanNotCmt">内容已经消失，无法评论</string>
+    <string name="community_expand">全部%d条评论</string>
+    <string name="community_unread_cmts">%d个新评论</string>
+    <string name="community_unread_likes">%d个喜欢</string>
+    <string name="community_unread">%1$d个新评论，%2$d个喜欢</string>
+    <string name="community_comments_all_got">内容已经全部获取了</string>
+    <string name="community_comments_all_clear">已经清空了全部通知哟</string>
+    <string name="community_comments_all_clear_confirm">真的要清空全部通知？</string>
+    <string name="community_unread_divid">,</string>
+    <string name="welcomeToPac">Welcome to 6Deg</string>
+    <string name="welcomeToPacDesc">"6Deg is a link to you and your friend's album, let's see what ta can do"</string>
+    <string name="folderGuideDesc">You can create a different category of album, and family and friends together to manage photos.</string>
+    <string name="groupGuideDesc">Can also create a shared group with friends, sharing photos anytime, anywhere.</string>
+    <string name="groupGuideDesc2">"Click to add a shared group, quickly to share photos \n to many friends"</string>
+    <string name="start">Start</string>
+
+    <!-- 分类 -->
+    <string name="allPhotos">All Photos</string>
+    <string name="inviteByFolder">invited by %s</string>
+    <string name="deleteShareFolder">Are you sure to remove him/her from member list?</string>
+    <string name="folderMemberInvited">"%1$s want to share the \"%2$s\" album with you"</string>
+    <string name="yourFriend">Your friends</string>
+    <string name="app_unread">%d invitations</string>
+
+    <string name="selectedContactEmpty">No friend selected</string>
+
+
+    <!-- 联系人 -->
+    <string name="phoneContacts">手机联系人</string>
+    <string name="searchContacts">Enter name or phone Num to search</string>
+    <string name="deleteContacts">Are you sure to delete this contact</string>
+    <string name="inviteContacts">invited by %s</string>
+
+    <!-- 群组 -->
+    <string name="groupName">Name</string>
+    <string name="creater">Pac Leader</string>
+    <string name="createGroup">New Pac</string>
+    <string name="noSelectedConstacts">No friend selected</string>
+    <string name="groupNameInput">Enter Pac name</string>
+    <string name="exitPacTips">Are you sure to leave this Pac?</string>
+    <string name="groupMemberInvited">unregistered</string>
+    <string name="groupCommentNotification">Notifications</string>
+    <string name="groupCommentNotificationMore">Earlier ones</string>
+    <string name="groupCommentNotificationComment">%s评论了你</string>
+    <string name="groupPrivateCommentNotificationComment">%s私密评论了你</string>
+    <string name="groupCommentNotificationReply">%1$s回复了%2$s</string>
+    <string name="groupPrivateCommentNotificationReply">%1$s私密回复了%2$s</string>
+    <string name="groupCommentNotificationLike">%s赞了你</string>
+
+    <string name="selectPhoneCode">Area Code</string>
+
+    <!-- 设置 -->
+    <string name="personalGender">性别</string>
+    <string name="personalLocation">所在地</string>
+    <string name="personalSchool">学校/公司</string>
+    <string name="personalJob">职业</string>
+    <string name="personalIntro">个人简介</string>
+    <string name="personalGenderMan">男</string>
+    <string name="personalGenderWoman">女</string>
+    <string name="personalLocationHint">输入所在地</string>
+    <string name="personalLocationTipGPS">GPS定位</string>
+    <string name="personalSchoolHint">输入学校/公司</string>
+    <string name="personalJobHint">输入职业</string>
+    <string name="personalIntroHint">输入个人简介</string>
+    <string name="personalBackground">修改背景图</string>
+    <string name="personalAvatar">修改头像</string>
+    <string name="personalSelectBackground">选择背景图</string>
+    <string name="personalSelectBgPic">选择照片</string>
+    <string name="selectAlbum">选择相册</string>
+
+    <!-- 设置 -->
+    <string name="personal">我</string>
+    <string name="account">个人信息</string>
+    <string name="avatar">头像</string>
+    <string name="nickName">真实姓名</string>
+    <string name="addAvatar">添加头像</string>
+    <string name="noAvatar">还没设置头像</string>
+    <string name="clickToSetNickname">这里输入名字</string>
+    <string name="noNickname">还没有入名字</string>
+    <string name="change_pwd">修改密码</string>
+    <string name="setting">设置</string>
+    <string name="dataTraffic">数据流量</string>
+    <string name="setting_inputPhotoFromTimehut">从时光小屋导入照片</string>
+    <string name="uploadOnlyWIFI">仅在Wi-Fi下同步</string>
+    <string name="clearCache">清除缓存</string>
+    <string name="clear_done">清除成功</string>
+    <string name="setting_star">给“6度”评星</string>
+    <string name="setting_about">关于6度</string>
+    <string name="setting_help">使用帮助</string>
+    <string name="setting_feedback">建议和反馈</string>
+    <string name="calculate">计算中…</string>
+    <string name="setting_exit">退出</string>
+    <string name="setting_dismiss">解散</string>
+    <string name="setting_exit_confirm">真的要退出吗？</string>
+    <string name="hopeYourFeedback">“6度”期待你的好建议</string>
+    <string name="feedbackDone">感谢你帮助“6度”变得更好</string>
+
+    <string name="setting_notify">消息提醒</string>
+    <string name="setting_notify1">聊天消息</string>
+    <string name="setting_notify2">好友申请</string>
+    <string name="setting_notify3">回复/评论</string>
+    <string name="setting_notify4">收到赞</string>
+    <string name="setting_notify5">新朋友的朋友</string>
+    <string name="hintFeedbackEmail">联系邮箱</string>
+    <string name="tip_feedback">我们将通过此邮箱和你取得联系</string>
+    <string name="nullFeedbackEmail">你还没有输入邮箱呢</string>
+
+    <!-- 关于 -->
+    <string name="label_aboutus_version">Version: %s</string>
+    <string name="btn_check_update">检查更新</string>
+    <string name="label_aboutus_no_new">恭喜！你正在使用最新的“6度”app</string>
+    <string name="label_aboutus_privacy_policy">使用条款</string>
+    <string name="label_aboutus_right">©2015 get6deg.com</string>
+
+    <!-- 单位 -->
+    <string name="accept">接受</string>
+    <string name="deleteFolder">删除相册</string>
+    <string name="homeTopBarClearAll">清除所有</string>
+    <string name="inviteAgain">重新邀请</string>
+    <string name="inviteFailed">邀请失败</string>
+    <string name="invited">邀请中...</string>
+    <string name="mulEditClearAll">清空</string>
+    <string name="mulEditPutBack">还原</string>
+    <string name="notifications">通知</string>
+    <string name="reject">拒绝</string>
+    <string name="showSharerList">成员列表</string>
+    <string name="touchToManager">点击管理照片</string>
+
+    <string name="bs_more">更多</string>
+    <string name="homepageTimeFormat">%1$s/%2$s/%3$s</string>
+    <string name="timeFormat_MDHM">%1$s-%2$s %3$s:%4$s</string>
+    <string name="modify_success">Succeeded</string>
+    <string name="modify_fail">Failed</string>
+    <string name="ok">确定</string>
+    <string name="save">保存</string>
+    <string name="send">发布</string>
+    <string name="done">确定</string>
+    <string name="cancel">取消</string>
+    <string name="note">提示</string>
+    <string name="next">下一步</string>
+    <string name="retry">重试</string>
+    <string name="loading">正在加载…</string>
+    <plurals name="cmts">
+        <item quantity="one">%d Cmt</item>
+        <item quantity="other">%d Cmts</item>
+    </plurals>
+    <plurals name="photos">
+        <item quantity="one">%d photo</item>
+        <item quantity="other">%d photos</item>
+    </plurals>
+    <plurals name="likes">
+        <item quantity="one">%d like</item>
+        <item quantity="other">%d likes</item>
+    </plurals>
+
+    <!-- 暂不用 -->
+    <string name="registerGetProfileWX">Use Wechat Profile</string>
+    <string name="registerGetProfileFB">Use Facebook Profile</string>
+    <!-- /暂不用 -->
+    <string name="registerGetProfileCustom">Create a new profile</string>
+    <string name="registerGetProfileTitle">Name and Headshot</string>
+
+    <!-- 注册 -->
+    <string name="prompt_loading_picture_failed">Oops, loading error. Please try again</string>
+    <string name="login">Sign in</string>
+    <string name="register">Sign up</string>
+    <string name="getVerifyCode">Get code</string>
+    <string name="regetVerifyCode">Send again</string>
+    <string name="regetVerifyCodeSecond">Send again(%ds)</string>
+    <string name="phoneNum">Phone number</string>
+    <string name="smsVerifyCode">SMS code</string>
+    <string name="pwd">Password</string>
+    <string name="oldPwdTips">Please enter your old password</string>
+    <string name="newPwd">New password</string>
+    <string name="newPwdTips">Please enter your new password</string>
+    <string name="newPwd2Tips">Please confirm your new password</string>
+    <string name="newPwdDifferent">Oops, new passwords do not match</string>
+    <string name="forgetPwd">Forget</string>
+    <string name="forgetPwd2">Forgot password?</string>
+    <string name="resetPwd">Reset password</string>
+    <string name="inputUPhone">Please enter your phone</string>
+    <string name="inputPhontCode">Please enter your area code</string>
+
+    <!-- Guide -->
+    <string name="guide_title_1">Softcopy Docs</string>
+    <string name="guide_title_2">Family Save</string>
+    <string name="guide_title_3">Study Review</string>
+    <string name="guide_title_4">Photo Inbox-Outbox</string>
+    <string name="guide_tips_1">"Privately save and carry photos \nof your IDs, memberships, registrations…"</string>
+    <string name="guide_tips_2">"In this one-stop keep all those \nphotos which need to be shared."</string>
+    <string name="guide_tips_3">"Lock down all those critical class \nnotes, whiteboards, presentations…"</string>
+    <string name="guide_tips_4">"Mobilize an album for all those \nmedical, school, work, sport reports."</string>
+    <string name="startApp">进入6度</string>
+
+    <!-- Error -->
+    <string name="inputError">请不要输入特殊字符</string>
+    <string name="nullContent">还没输入内容</string>
+    <string name="noData">没有数据</string>
+    <string name="loadError_NoData">加载失败，没有数据</string>
+    <string name="phoneNumNotNull">还没输入手机号码</string>
+    <string name="phoneNumWrong">手机号码格式不正确</string>
+    <string name="pwdIsTooShort">密码位数不够(至少6位)</string>
+    <string name="pwdNotNull">还没输入密码</string>
+    <string name="loginError">帐号或密码不正确</string>
+    <string name="verifyCodeError">验证码不正确</string>
+    <string name="networkError">网络错误，请检查网络链接</string>
+    <string name="serverError">服务出了点问题，请稍后重试</string>
+    <string name="addError">添加失败，再试一次？</string>
+    <string name="getProfileError">获取信息失败</string>
+    <string name="versionIsNewest">当前已经是最新版本</string>
+    <string name="networkNotNormal">网络错误</string>
+
+    <!-- 日期 -->
+    <string name="january">Jan.</string>
+    <string name="february">Feb.</string>
+    <string name="march">Mar.</string>
+    <string name="april">Apr.</string>
+    <string name="may">May.</string>
+    <string name="june">Jun.</string>
+    <string name="july">Jul.</string>
+    <string name="august">Aug.</string>
+    <string name="september">Sep.</string>
+    <string name="october">Oct.</string>
+    <string name="november">Nov.</string>
+    <string name="december">Dec.</string>
+    <string name="year">%d</string>
+    <string name="day">%d</string>
+
+    <!-- 推送 -->
+    <string name="notify_group_removed">Sorry…6Deg removed</string>
+    <string name="notify_group_user_removed">Sorry…kicked from 6Deg</string>
+
+    <!-- 会话网络不好显示-->
+    <string name="communityIntenetError">Oops…please check your network</string>
+    <string name="searchResult">%d photos found</string>
+    <string name="captionTips">Your story for this moment…</string>
+    <string name="release">Share</string>
+    <string name="shareTo">分享到：</string>
+    <string name="morePeople">等%d人</string>
+    <string name="peopleCount">%d人</string>
+    <string name="dashboard_guide1">点击相册图标，即可将照片放入该相册</string>
+    <string name="dashboard_guide2">点击圈子图标，即可将照片分享到该圈子</string>
+    <string name="dashboard_guide3">点击为照片添加描述</string>
+    <string name="releaseDone">Shared</string>
+
+    <!-- 首页上传进度-->
+    <string name="homeUploadProgress">Synchronizing: %1$d/%2$d...</string>
+    <string name="homeUploadFailedWithPic">%1$d failed, tap to retry</string>
+
+    <string name="peopleInfoPacTo">建立圈子</string>
+    <string name="peopleInfoAdded">已添加朋友</string>
+    <string name="personalEdit">编辑个人信息</string>
+    <string name="friendManagerInvite">邀请加入</string>
+    <string name="inviteFriends">邀请朋友</string>
+    <string name="friendManager">朋友管理</string>
+    <string name="friendSectionInvitation">新的朋友</string>
+    <string name="friendSectionPacUser">已加入的朋友(%s)</string>
+    <string name="friendInvitationDefault">申请成为你的朋友</string>
+    <string name="friendAddSearchPhone">名字或手机号</string>
+    <string name="friendSearchMyAccount">我的帐号为：%1$s</string>
+    <string name="friendSearchOtherPlat">其他平台添加</string>
+    <string name="friendSearchPhoneEmpty">输入的号码为空</string>
+    <string name="personalAddFriend">加为朋友</string>
+    <string name="personalAddSBFriend">加%s为朋友</string>
+    <string name="addFriends">添加朋友</string>
+    <string name="searchFriends">搜索朋友</string>
+    <string name="personalAddFriendTips">互相成为朋友之后，才能发起聊天。</string>
+    <string name="seeSameFriendsTips">只有加为朋友后，才能看到你们的共同朋友</string>
+    <string name="startMsg">临时聊天</string>
+    <string name="personalAddedFriend">等待接受</string>
+    <string name="inputApplyInfoTitle">添加朋友</string>
+    <string name="inputApplyInfoHint">填写验证信息</string>
+    <string name="inputApplyInfoTips">提示：成为朋友后，你们可以聊天，但Ta会从“朋友的朋友”里消失。Ta的手机号码会自动保存到你的手机通讯录</string>
+    <string name="sameFriends">共同好友</string>
+    <string name="noSameFriendsTips">你们的共同好友还没有注册6度</string>
+    <string name="phoneToHe">给他打电话</string>
+    <string name="addToContacts">将他加入手机通讯录</string>
+    <string name="etc">等</string>
+    <string name="report">举报</string>
+    <string name="shield">屏蔽TA</string>
+    <string name="shieldSuccess">屏蔽成功</string>
+    <string name="shieldConfirm">确认屏蔽%s的内容吗？屏蔽后将无法恢复</string>
+    <string name="reportDone">举报成功，我们会尽快处理</string>
+    <string name="releaseFriendship">删除朋友关系</string>
+    <string name="releaseFriendshipDone">删除成功</string>
+
+    <string name="friendSearchPhoneTip">添加手机号：&lt;font color=\'#6478ff\'&gt;%s&lt;/font&gt;</string>
+    <string name="friendSearchPhoneNo">用户不存在</string>
+
+    <string name="friendRequestAccepted">已接受</string>
+    <string name="friendRequestRefused">已拒绝</string>
+    <string name="refused">拒绝</string>
+    <string name="friendRequestRefusedTips">确定拒绝%s的好友申请？拒绝后对方不会收到任何通知。</string>
+    <string name="friendNewAddMsg" >%s还没有加入6度，快邀请Ta加入吧</string>
+    <string name="friendNewAddMsg2" >%1$s还没有加入6度，先和%2$s成为朋友吧</string>
+    <string name="friendNewAddBtn" >邀请</string>
+
+    <string name="syncToFriendFeed" >同时发布到[朋友动态]</string>
+    <string name="syncToFOFFeed" >同时发布到[朋友的朋友]</string>
+    <string name="currentLocation">所在位置</string>
+    <string name="findLocation">正在定位…</string>
+    <string name="locationFail">定位失败</string>
+    <string name="notShowLocation">不显示位置</string>
+    <string name="customLocation">自定义位置</string>
+
+    <string name="homepage">朋友的朋友</string>
+    <string name="friend">朋友</string>
+    <string name="fof">朋友的朋友</string>
+    <string name="chat">聊天</string>
+    <string name="savePhoto">保存到相册</string>
+    <string name="photo_detail">照片详情</string>
+    <string name="dataLoadingFail">数据加载错误</string>
+    <string name="delete_confirm">真的要删除?</string>
+    <string name="delete_success">删除成功</string>
+    <string name="delete_fail">删除失败</string>
+    <string name="input_cmts">请输入评论</string>
+    <string name="private_cmt_tips">私密评论(只有%s和我可以看到)</string>
+    <string name="private_cmt_tips2">私密回复(只有%s和我可以看到)</string>
+    <string name="post_fof_guide">发布的照片和评论，只有朋友的朋友可以看到；朋友将不会看到这里的照片和评论</string>
+    <string name="post_mood_guide">说出你现在的心情\n心情会在新的一天（凌晨2点）自动\n消失让你不被过去所打扰</string>
+    <string name="post_talk_guide">在朋友的朋友里，找到和你有共同话题的人，并组建一个群聊</string>
+    <string name="chat_group_guide">6度支持群聊了，快叫上朋友和\n朋友的朋友一起聊吧</string>
+    <string name="chat_group">群聊</string>
+
+    <string name="me_page_tips">添加Ta为朋友后，你就可以认识Ta的朋友</string>
+    <string name="me_page_grid_title">朋友动态里的照片</string>
+    <string name="other_page_grid_title">Ta发布的照片</string>
+    <string name="me_page_private">朋友不可见</string>
+    <string name="sendMsg">发送消息</string>
+    <string name="remove">Remove</string>
+    <string name="deleteFriendTitle">删除朋友</string>
+    <string name="deleteFriendContent">确认将%s从朋友列表删除吗？不会影响手机通讯录</string>
+    <string name="deleteFromFList">从朋友列表删除</string>
+    <string name="deleteFromFListTips">不会影响手机通讯录</string>
+
+    <string name="switchAlbum">切换相册</string>
+    <string name="tabChat">聊天</string>
+    <string name="tabFriends">朋友</string>
+
+    <string name="chatHint">说点什么...</string>
+    <string name="chatActivityTitle">和%s的对话</string>
+    <string name="chatActivityGroupTitle">%s</string>
+    <string name="chatEmptyToast">没有聊天内容</string>
+    <string name="msg_delivered">送达</string>
+    <string name="msg_ack">已读</string>
+    <string name="postTitle">选择版式</string>
+    <string name="postPreview">发布预览</string>
+    <string name="ffOnly4Piece">发布动态目前最多只能选%d张图</string>
+
+    <string name="add_failed">加入失败，可能是网络问题，请稍后再试</string>
+    <string name="msg_send_failed">发送失败，请重试</string>
+    <string name="no_upload_photo">还没有发布照片</string>
+    <string name="no_upload_photo2">%1$s共发布了%2$d张照片\n加为朋友即可查看</string>
+    <string name="searchHint">搜索照片描述</string>
+    <string name="no_notification">还没有收到通知</string>
+
+    <string name="delete_comment">删除评论</string>
+    <string name="delete_conversation">删除聊天</string>
+    <string name="chat_mul_msg_total_from_serval">%1$d个朋友发来%1$d条消息</string>
+    <string name="chat_mul_msg_total_from_one">%1$s发来%2$d条消息</string>
+    <string name="your_one_Friend">你的朋友</string>
+    <string name="your_serval_Friend">你的朋友们</string>
+
+    <string name="findNFriendsTips1">通过朋友找到了
+        &lt;br&gt;&lt;font color=\'#6478ff\'&gt;&lt;b&gt;%1$d&lt;/b&gt;&lt;/font&gt;
+        &lt;font color=\'#FF3C3C\'&gt;&lt;b&gt;%2$s&lt;/b&gt;&lt;/font&gt;位朋友的朋友</string>
+    <string name="findNFriendsTips2">通过&lt;font color=\'#6478ff\'&gt;&lt;b&gt;%1$d&lt;/b&gt;&lt;/font&gt;位朋友找到了
+        &lt;br&gt;&lt;font color=\'#6478ff\'&gt;&lt;b&gt;%2$d&lt;/b&gt;&lt;/font&gt;&lt;font color=\'#FF3C3C\'&gt;&lt;b&gt;%3$s&lt;/b&gt;&lt;/font&gt;位朋友的朋友</string>
+    <string name="chat_msg_copy">复制文字</string>
+    <string name="chat_msg_delete">删除</string>
+    <string name="moreFriends">邀请朋友</string>
+
+    <string name="chat_conversation_image">[图片]</string>
+    <string name="chat_conversation_location">[地理位置]</string>
+    <string name="chat_conversation_vioce">[语音]</string>
+    <string name="chat_conversation_from_me">我：</string>
+    <string name="ff_public_empty">还没有添加照片</string>
+
+    <string name="ff_upload_image_failed">图片上传失败</string>
+
+    <string name="btn_first_page_login">登录已有帐号</string>
+    <string name="btn_first_page_register">注册新帐号</string>
+    <string name="login_input_password_tip">输入登录密码</string>
+    <!--<string name="btn_obtain_book_tip">使用之前，需要开启通讯录查找朋友的朋友</string>-->
+    <string name="btn_obtain_book_failed_tip">通讯录获取失败，请在[系统设置]中\n允许6度获取通讯录权限</string>
+    <string name="btn_obtain_book_tip">使用之前，需要开启通讯录查找朋友的朋友\n(不保存通讯录的任何信息，仅作匹配识别)</string>
+    <string name="btn_obtain_book">开启通讯录</string>
+
+    <string name="btn_obtaining_book">正在查找朋友的朋友…</string>
+    <string name="uploading">正在发布…</string>
+
+    <string name="book_friend_front">共找到</string>
+    <string name="book_friend_add">个朋友的朋友</string>
+    <string name="no_ffriends">您的朋友没有加入6度\n邀请他们加入吧</string>
+    <string name="sameFriendsCount">%d个共同朋友</string>
+
+    <string name="tip_rigister_input_in_upload">输入手机号码注册</string>
+    <string name="btn_rigister_input_in_upload">手机号码</string>
+    <string name="btn_login_input_phone">输入手机号码登录</string>
+    <string name="btn_login_input_phone_hint">输入手机号码</string>
+
+    <string name="realyNameTips">请填写你的真名</string>
+    <string name="tip_register_agree_tip">点击上方注册按钮，即表示你同意</string>
+    <string name="tip_register_agree">《6度使用条款》</string>
+
+    <string name="login_phone_unexist">手机号码未注册</string>
+    <string name="register_phone_exist">手机号码已经注册</string>
+
+    <string name="invitationTips">邀请朋友加入，认识Ta的朋友</string>
+    <string name="wechat_circle">微信朋友圈</string>
+    <string name="qq_zone">QQ空间</string>
+    <string name="anonymous">匿名消息</string>
+    <string name="shareToThis">分享到6度</string>
+    <string name="shareToThisTips">只有朋友的朋友可见</string>
+
+    <string name="chat_no_conversation">点击右上角的+按钮\n创建聊天</string>
+    <string name = "chat_create_title" >选择朋友</string>
+    <string name = "chat_create_failed" >发起聊天失败</string>
+
+    <string name = "chat_more_create_chat" >发起聊天</string>
+    <string name = "chat_more_add_friend" >添加朋友</string>
+    <string name = "add_member" >添加成员</string>
+
+    <string name = "friend_manage_add_friend" >添加朋友</string>
+    <string name="time_current">刚刚</string>
+    <string name="time_minute_ago">%d分钟之前</string>
+    <string name="time_hour_ago">%d小时之前</string>
+    <string name="yesterday">昨天</string>
+
+    <string name = "friendSectionContact" >全部朋友</string>
+
+    <string name = "register_obtain_address_fail_title" >无法获取通讯录</string>
+    <string name = "register_obtain_address_fail_msg" >请在[系统设置]中允许6度获取通讯录权限，或者卸载重新安装，才能进入下一步</string>
+
+    <string name = "personal_setting_tip" >提示：填写真实姓名，朋友的朋友才会知道你是谁</string>
+
+    <string name = "personal_setting_name_tip">请输入真实姓名</string>
+
+    <string name="personalSettingBtnMan">男</string>
+    <string name="personalSettingBtnWoman">女</string>
+    <string name = "personalSettingMustSelected" >请选择你的性别</string>
+
+
+    <string name = "iKnow" >知道了</string>
+    <string name = "helpGuideTitle" >使用说明</string>
+    <string name = "ffGuideEnter" >进入6度</string>
+    <string name = "ffGuideTitle" >%s，欢迎加入</string>
+    <string name = "ffGuideTip" >进入6度之前\n先发布1张照片，向大家展示你自己\n照片对通讯录里的人不可见</string>
+    <string name = "ffSelectNoPhotoTips" >请选择1至4张照片</string>
+
+    <string name="ffMustOnePicture">请至少选择一张照片</string>
+    <string name="send_message">发送</string>
+
+    <string name="share_invite_title">%s邀请你加入“6度”</string>
+
+    <string name="invite_select_user_tip">匿名邀请：将一段话通过6度的短信系统发给你的朋友，他们不会知道你是谁</string>
+    <string name="invite_select_user_title">匿名邀请</string>
+    <string name="invite_select_user_btn">下一步</string>
+    <string name="invite_anonymous_message">匿名消息</string>
+    <string name="invite_anonymous_tip">最多30个字，会自动加入下载链接，消息将通过6度的短信平台发送</string>
+
+    <string name="invite_anonymous_error_empty">请输入内容</string>
+    <string name="invite_anonymous_error_too_long">匿名消息不能超过30个字</string>
+    <string name="invite_anonymous_success">匿名消息发送成功</string>
+    <string name="invite_anonymous_failed">匿名消息发送失败</string>
+
+    <string name="resource_deleted">你查看的内容已经被删除</string>
+    <string name="OnlyServalPiece">最多只能选%d张照片</string>
+    <string name="photosCount">%d张照片</string>
+    <string name="photos">照片</string>
+    <string name="emotions">心情</string>
+    <string name="talk">闲聊</string>
+    <string name="selectedMood">选择一个心情</string>
+    <string name="pleaseSelectedMood">请选择一个心情</string>
+    <string name="postMood">发布心情</string>
+    <string name="postMoodTips">注: 心情会在凌晨2点自动消失，新的一天新的心情</string>
+    <string name="postMoodHint">写下你现在的心情或想法...</string>
+
+    <string name="invite_sms_select_title">短信邀请</string>
+
+    <string name="apply_friend_success">朋友申请已发送</string>
+
+    <string name="chat_custom_apply_friend">你已和%s成为朋友，现在可以开始聊天了</string>
+    <string name="chat_custom_applyed_friend">你已和%s成为朋友，现在可以开始聊天了</string>
+
+
+    <string name="talkSyncTips1">%s将对朋友可见</string>
+    <string name="talkSyncTips2">%s将只对朋友的朋友可见</string>
+    <string name="deleteTalkTips">闲聊已被群组解散，无法加入</string>
+    <string name="sendTalkTips">发起了闲聊</string>
+    <string name="sendMoodTips">发布了心情</string>
+    <string name="noTalkTitle">闲聊主题不能为空</string>
+    <string name="talkTitleToLong">闲聊主题名不能超过50个字</string>
+    <string name="inputTalkTitle">输入闲聊主题</string>
+    <string name="postTalk">发布闲聊</string>
+    <string name="addTalk">加入闲聊</string>
+    <string name="enterTalk">进入闲聊</string>
+    <string name="talkIsDeleted">闲聊已被删除</string>
+    <string name="talkPeopleCount">参与者(%d)</string>
+    <string name="addTalkFull">闲聊人数已超出限制，无法加入</string>
+    <string name="addTalkFullTips">闲聊成员数已超过最大人数限制，请修改</string>
+    <string name="talkPeopleNull">至少需要添加一个成员</string>
+    <string name="maxPeopleCount">最大人数</string>
+    <string name="noLimit">无限制</string>
+    <string name="postTalkTips">提示：超过人数后，该闲聊会在“朋友的朋友”里消失，并且只能通过邀请加入。</string>
+
+    <string name="chat_hx_account_conflict">你的账号己在其他设备登录，若非本人操作，你的登录密码可能已经泄露，请及时改密。</string>
+    <string name="chat_hx_account_removed">你的账号已退出登录，若非本人操作，你的登录密码可能已经泄露，请及时改密。</string>
+
+    <string name="register_upload_contact_failed">上传通讯录失败，请重试</string>
+
+    <string name="downloading">正在下载...</string>
+
+    <string name="btn_voice_normal">按住说话</string>
+    <string name="voice_record_ing">上滑取消，松开结束</string>
+    <string name="voice_record_cancel">松开手指，取消发送</string>
+    <string name="voice_record_fail">录音失败，请重试！</string>
+
+    <string name="chat_type_picture">图片</string>
+    <string name="chat_type_location">位置</string>
+
+    <string name="Send_voice_need_sdcard_support">发送语音需要sdcard支持</string>
+    <string name="Is_download_voice_click_later">正在下载语音，稍后点击</string>
+
+    <string name="Recording_without_permission">无录音权限</string>
+    <string name="The_recording_time_is_too_short">录音时间太短</string>
+    <string name="send_failure_please">发送失败，请检测服务器是否连接</string>
+    <string name="unable_to_get_loaction">无法获取到你的位置信息!</string>
+    <string name="location_message">位置信息</string>
+    <string name="post_location_message">发送</string>
+    <string name="Making_sure_your_location">正在定位...</string>
+
+    <string name="muteMode">静音模式</string>
+    <string name="notification_setting_sv">声音和震动</string>
+    <string name="notification_setting_v">只震动</string>
+    <string name="notification_setting_mute">无声音和震动</string>
+    <string name="notification_setting_close">关闭推送</string>
+    <string name="sending_message">发送中...</string>
+    <string name="please_check_permission">key 验证出错! 请在 AndroidManifest.xml 文件中检查 key 设置</string>
+
+    <string name="groupCreateFail">新建失败，再试一次？</string>
+    <string name="you_are_out_of_group">You have been kicked off from the group</string>
+    <string name="the_current_group_dismiss">The current group has been dismissed</string>
+
+    <string name="it">TA</string>
+
+    <string name="chat_manage_title">聊天信息</string>
+    <string name="chat_manage_title_add">聊天信息%s</string>
+    <string name="chat_manage_msg_notify">消息免打扰</string>
+    <string name="chat_manage_group_name">群聊名称</string>
+    <string name="chat_manage_group_name_empty">群聊名称不能为空</string>
+    <string name="chat_manage_group_name_failed">群聊名称修改失败</string>
+    <string name="chat_manage_group_name_hint">未填写</string>
+    <string name="chat_manage_msg_pics">聊天图片</string>
+    <string name="chat_manage_msg_pics_empty">没有聊天图片</string>
+    <string name="chat_manage_report">举报该群</string>
+    <string name="chat_manage_report_chat">举报聊天</string>
+    <string name="chat_manage_exit_group">退出群聊</string>
+    <string name="chat_manage_exit_group_title">确认要退出本群?确认后，系统不会通知其他群成员(包括群主)。</string>
+    <string name="chat_manage_exit_group_failed">退出群聊失败</string>
+    <string name="chat_manage_exit_group_owner">解散群聊</string>
+    <string name="chat_manage_exit_group_owner_failed">解散群聊失败</string>
+    <string name="chat_manage_exit_group_owner_title">确认要解散本群?</string>
+    <string name="chat_manage_msg_pics_num">%d张图片</string>
+
+    <string name="chat_manage_member_add">添加成员</string>
+    <string name="chat_manage_member_delete">删除成员</string>
+
+    <string name="dialog_delete_title">确定删除</string>
+    <string name="dialog_delete_member_content">确定从本群中移出%s？</string>
+
+    <string name="chat_custom_create_group">*1$s创建了群聊，成员还包括：*2$s</string>
+    <string name="chat_custom_create_group_empty">*1$s创建了群聊</string>
+    <string name="chat_custom_group_invite_members">*1$s邀请*2$s加入了群聊</string>
+    <string name="chat_custom_group_remove_members">*1$s将*2$s移出了群聊</string>
+    <string name="chat_custom_group_exit">*1$s退出了群聊</string>
+    <string name="chat_custom_group_change_name">*1$s修改了群名称</string>
+    <string name="chat_custom_join_talk">*1$s加入了群聊</string>
+    <string name="chat_draft">[草稿]</string>
+    <string name="chat_at_me">[有人@我]</string>
+    <string name="chat_unread">[%d条]</string>
+    <string name="chat_removed_group">你被移出了群聊“%s”</string>
+    <string name="chat_deleted_group">群聊“%s”已经被删除</string>
+    <string name="chat_custom_create_tmp_chat">*1$s创建了临时聊天</string>
+    <string name="chat_edit_group_name_by_owner">群组人数超过10人时，只有群主可以修改群名称</string>
+    <string name="you">你</string>
+
+    <string name="chat_picture_indicator">%1$d / %2$d</string>
+
+    <string name="select_at_friend_title">选择@的人</string>
+    <string name="select_at_friend_hint">搜索群成员</string>
+    <string name="mark_read_chat_conversation">标记为已读</string>
+    <string name="chat_inputting_title">对方正在输入...</string>
+    <string name="chat_tmp_conversation">%d个临时聊天</string>
+    <string name="chat_tmp_conversation_title">临时聊天</string>
+    <string name="chat_tmp_conversation_tip">临时聊天会在24小时后自动消失，除非聊天双方成为朋友。</string>
+    <string name="chat_tmp_conversation_warn">&lt;b&gt;%1$s&lt;/b&gt;后，如果你和%2$s未成为朋友则聊天会自动删除</string>
+    <string name="chat_tmp_conversation_warn_btn_add">加为好友</string>
+    <string name="chat_tmp_conversation_warn_btn_wait">等待确认</string>
+    <string name="chat_tmp_chat_title">和%s的临时聊天</string>
+    <string name="chat_tmp_chat_expired">和%s的临时聊天已经到期</string>
+    <string name="chat_tmp_chat_expired_content">临时聊天结束，聊天将自动关闭并清除聊天记录。</string>
+    <string name="chat_tmp_chat_expired_btn">退出聊天</string>
+    <string name="chat_unread_count">%d条未读消息</string>
+
+    <string name="searchTips">关系搜索：搜索你和任何一个人之间的关系图</string>
+    <string name="NDegRelation">%s度关系</string>
+    <string name="noSearchResult">没有搜索到结果</string>
+    <string name="noUserInfo">未填写个人资料</string>
+    <string name="searchDetailTitle">关系图谱</string>
+    <string name="SB_homepage">%s的主页</string>
+    <string name="otherNPeople">其他%d人</string>
+    <string name="homepageTitle">个人主页</string>
+    <string name="tmpChat">临时聊天</string>
+    <string name="up7Level">7度以上关系</string>
+
+    <!-- process picture -->
+    <string name="process_pic_filter">滤镜</string>
+    <string name="process_pic_sticker">贴纸库</string>
+    <string name="process_pic_say">说\n什\n么</string>
+    <string name="process_pic_call">喊\n什\n么</string>
+    <string name="process_pic_think">想\n什\n么</string>
+    <string name="process_pic_aside">旁\n白</string>
+    <string name="process_pic_title_for_single">编辑照片</string>
+    <string name="process_pic_title_next">下一张</string>
+    <string name="process_pic_title_last">上一张</string>
+
+    <string name="uploadCustomPendant">上传自定义贴纸</string>
+    <string name="uploadCustomBubble">同意他人使用我创作的气泡</string>
+    <string name="selectedPendant">选择贴纸</string>
+    <string name="selectedBubble">选择气泡</string>
+    <string name="noPendant">还没有使用过的贴纸</string>
+    <string name="noBubble">还没有使用过的气泡</string>
+    <string name="hot">热门</string>
+    <string name="newest">最新</string>
+    <string name="common">常用</string>
+    <string name="uploadingPendant">正在上传贴纸...%s</string>
+    <string name="uploadSuccess">上传成功</string>
+    <string name="uploadFail">上传失败</string>
+    <string name="downloadPendantFail">下载贴纸失败</string>
+    <string name="uploadCancel">取消上传</string>
+    <string name="uploadRetry">重新上传</string>
+    <string name="onlyMeUse">仅自己使用</string>
+    <string name="sharePendant">共享该贴纸</string>
+
+    <string name="loadError">加载失败</string>
+    <string name="shareToFriends">分享给朋友</string>
+    <string name="pureColorBG">纯色背景</string>
+    <string name="cartoonElement">漫画元素</string>
+    <string name="cartoonFrame">漫画特效</string>
+    <string name="cartoonFrame2">漫画\n特效</string>
+    <string name="bubbleInputDefault">点击输入文字</string>
+    <string name="editText">编辑文字</string>
+    <string name="inputText">输入文字</string>
+    <string name="fontDownloadTitle">该字体需要先下载才能使用</string>
+    <string name="freeDownload">免费下载</string>
+    <string name="cutPhoto">剪切图片</string>
+
+    <string name="btn_done">完成</string>
+    <string name="skip">跳过</string>
+    <string name="compose_save_error">保存失败，再试一次？</string>
+    <string name="noEffect">不加特效</string>
+    <string name="compose_two_pics_warn">多图可以有更多风格的美化，确定只发送一张图片？</string>
+
+    <string name="picComposeGuide1">拖动可更改图片顺序</string>
+    <string name="picComposeGuide2">可以移动和缩放图片</string>
+    <string name="bubbleGuide1">点击这里编辑文字</string>
+    <string name="bubbleGuide2">点击这里修改字体</string>
+    <string name="picComposeExitConfirm">点击确定后，你本次制作的图片将会丢失</string>
+</resources>

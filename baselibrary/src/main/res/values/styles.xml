@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="AppTheme.MaterialColdStart">
+        <item name="android:windowBackground">@mipmap/image_launch</item>
+    </style>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:textSize">@dimen/txt_normal</item>
+        <!-- Customize your theme here. -->
+    </style>
+
+    <!--不是float的-->
+    <style name="theme_dialog_transparent"  parent="@android:style/Theme.Holo.Light">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+
+    <!--float 有背景的, float的，如果使用了setlayout，那么如果有输入框会弹不出来-->
+    <style name="theme_dialog_transparent2"  parent="@style/theme_dialog_transparent" >
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:backgroundDimAmount">0.6</item>
+        <item name="android:windowIsFloating">true</item>
+    </style>
+
+    <!--float 透明背景的，如果使用了setlayout，那么如果有输入框会弹不出来-->
+    <style name="theme_dialog_transparent_3"  parent="@style/theme_dialog_transparent2" >
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+
+    <style name="DefaultProgressStyle">
+        <item name="android:visibility">gone</item>
+        <item name="android:layout_width">40dp</item>
+        <item name="android:layout_height">40dp</item>
+    </style>
+
+    <style name="button_textview">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/timehut_lightGray</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingTop">8.0dip</item>
+        <item name="android:paddingBottom">8.0dip</item>
+    </style>
+
+    <style name="button_textview_active" parent="@style/button_textview">
+        <item name="android:textColor">@color/timehut_blue</item>
+    </style>
+
+    <style name="FullScreen" parent="AppTheme">
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <style name="Translucent" parent="AppTheme">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation</item>
+    </style>
+
+    //For GifView Declaration
+    <style name="Widget.GifView" parent="@android:style/Widget"/>
+
+    <style name="dialog_btnTextStyle">
+        <item name="android:textColor">@color/txt_blue</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:paddingRight">10dp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="default_recyleviewStyle">
+        <item name="android:background">@color/bg_white</item>
+        <item name="android:clipToPadding">false</item>
+        <item name="android:clipChildren">false</item>
+        <item name="android:paddingTop">@dimen/listPadding</item>
+        <item name="android:paddingBottom">@dimen/listPadding</item>
+        <item name="android:scrollbarStyle">outsideOverlay</item>
+        <item name="android:scrollbars">none</item>
+    </style>
+
+    <style name="default_imageBtnStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:minHeight">48dp</item>
+        <item name="android:minWidth">48dp</item>
+        <item name="android:scaleType">center</item>
+    </style>
+
+    <style name="default_listview">
+        <item name="android:scrollbars">none</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:cacheColorHint">@color/transparent</item>
+        <item name="android:divider">@color/transparent</item>
+        <item name="android:listSelector">@color/transparent</item>
+        <item name="android:dividerHeight">0dp</item>
+        <item name="android:clipToPadding">false</item>
+    </style>
+
+    <style name="default_btnStyle">
+        <item name="android:minHeight">@dimen/btnHeight</item>
+        <item name="android:textColor">@color/txt_white</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:paddingRight">10dp</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="default_dialogStyle" parent="@android:style/Theme.Holo.Light">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowBackground">@color/transparent</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:backgroundDimAmount">0.6</item>
+        <item name="android:windowIsFloating">true</item>
+    </style>
+
+    <style name="dialog_animation" parent="android:Animation">
+        <item name="@android:windowEnterAnimation">@anim/activity_open_enter</item> // 进入时的动画
+        <item name="@android:windowExitAnimation">@anim/activity_close_exit</item> // 退出时的动画
+    </style>
+
+    <style name="popup_menu_animation" parent="android:Animation">
+        <item name="@android:windowEnterAnimation">@anim/fade_in</item>  //进入时的动画
+        <item name="@android:windowExitAnimation">@anim/fade_out</item>    //退出时的动画
+    </style>
+
+</resources>

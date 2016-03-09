@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_white">
+
+    <LinearLayout
+        android:id="@+id/layoutActionBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp">
+
+        <RelativeLayout
+            android:id="@+id/actionBarForMul"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/actionBar_height">
+
+            <freedom.nightq.baselibrary.widgets.PointIndicatorView
+                android:id="@+id/pointIndicatorView"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/actionBar_small_height"
+                android:layout_centerInParent="true"
+                android:background="@color/transparent" />
+
+            <freedom.nightq.baselibrary.widgets.PressImageView
+                android:id="@+id/imgBackForMul"
+                style="@style/menu_iconStyle"
+                android:layout_marginLeft="5dp"
+                android:src="@mipmap/btn_icon_back_normal" />
+
+            <freedom.nightq.baselibrary.widgets.PressTextView
+                android:id="@+id/imgNextForMul"
+                style="@style/menu_txtStyle"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:gravity="center"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="@string/process_pic_title_next"
+                android:textColor="@color/app_main_color" />
+
+            <freedom.nightq.baselibrary.widgets.PressTextView
+                android:id="@+id/imgLastForMul"
+                style="@style/menu_txtStyle"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@id/imgNextForMul"
+                android:gravity="center"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="@string/process_pic_title_last"
+                android:textColor="@color/app_main_color" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_below="@id/layoutActionBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom">
+
+        <freedom.nightq.baselibrary.widgets.SwipeViewPager
+            android:id="@+id/viewPager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </RelativeLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="@dimen/fab_margin"
+        android:src="@android:drawable/ic_dialog_email" />
+
+</RelativeLayout>

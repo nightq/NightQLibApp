@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <!-- 图片 翻转等处理 -->
+    <LinearLayout
+        android:id="@+id/layoutForPic"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:paddingBottom="0dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="0dp"
+        android:weightSum="4"
+        android:visibility="visible" >
+
+        <freedom.nightq.baselibrary.widgets.PressImageView
+            android:id="@+id/imgShape"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:scaleType="centerInside"
+            android:src="@mipmap/btn_icon_cut"
+            android:layout_weight="1"
+            android:background="@drawable/list_white_item_bg"
+            android:visibility="gone" />
+
+        <freedom.nightq.baselibrary.widgets.PressImageView
+            android:id="@+id/imgCompose"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:scaleType="centerInside"
+            android:src="@mipmap/btn_icon_type"
+            android:background="@drawable/list_white_item_bg"
+            android:layout_weight="1" />
+
+        <freedom.nightq.baselibrary.widgets.PressImageView
+            android:id="@+id/imgRotate"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:scaleType="centerInside"
+            android:src="@mipmap/btn_icon_rotate"
+            android:background="@drawable/list_white_item_bg"
+            android:layout_weight="1" />
+
+        <freedom.nightq.baselibrary.widgets.PressImageView
+            android:id="@+id/imgRightLeft"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:scaleType="centerInside"
+            android:src="@mipmap/btn_icon_turn_hori"
+            android:background="@drawable/list_white_item_bg"
+            android:layout_weight="1" />
+
+        <freedom.nightq.baselibrary.widgets.PressImageView
+            android:id="@+id/imgUpDown"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:scaleType="centerInside"
+            android:src="@mipmap/btn_icon_turn_vert"
+            android:background="@drawable/list_white_item_bg"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <!-- 滤镜贴纸 -->
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        style="@style/default_recyleviewStyle"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginBottom="10dp"
+        android:clipChildren="false"
+        android:paddingBottom="0dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:paddingTop="0dp" />
+</LinearLayout>

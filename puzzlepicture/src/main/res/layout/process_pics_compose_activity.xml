@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_white">
+
+    <RelativeLayout
+        android:id="@+id/process_pic_compose_RL"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <freedom.nightq.puzzlepicture.widgets.DragableImageView
+            android:id="@+id/post_IV1"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/txt_hintGray"
+            android:scaleType="centerCrop" />
+
+        <ImageView
+            android:id="@+id/post_del1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@id/post_IV1"
+            android:layout_marginRight="-10dp"
+            android:src="@mipmap/btn_icon_sticker_delete_normal" />
+
+        <freedom.nightq.puzzlepicture.widgets.DragableImageView
+            android:id="@+id/post_IV2"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/txt_hintGray"
+            android:layout_toRightOf="@id/post_IV1"
+            android:scaleType="centerCrop" />
+
+        <ImageView
+            android:id="@+id/post_del2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@id/post_IV2"
+            android:layout_marginRight="-10dp"
+            android:src="@mipmap/btn_icon_sticker_delete_normal"
+            android:visibility="gone" />
+
+        <freedom.nightq.puzzlepicture.widgets.DragableImageView
+            android:id="@+id/post_IV3"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/txt_hintGray"
+            android:layout_toRightOf="@id/post_IV2"
+            android:scaleType="centerCrop"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/post_del3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@id/post_IV3"
+            android:layout_marginRight="-10dp"
+            android:src="@mipmap/btn_icon_sticker_delete_normal"
+            android:visibility="gone" />
+
+        <freedom.nightq.puzzlepicture.widgets.DragableImageView
+            android:id="@+id/post_IV4"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/txt_hintGray"
+            android:layout_toRightOf="@id/post_IV3"
+            android:scaleType="centerCrop"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/post_del4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@id/post_IV4"
+            android:layout_marginRight="-10dp"
+            android:src="@mipmap/btn_icon_sticker_delete_normal"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/process_pic_compose_bottomRL"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            style="@style/default_recyleviewStyle"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginBottom="10dp"
+            android:clipChildren="false"
+            android:paddingBottom="0dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="5dp"
+            android:paddingTop="0dp" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/process_pic_compose_SV"
+        android:layout_below="@id/process_pic_compose_RL"
+        android:layout_above="@id/process_pic_compose_bottomRL"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/layoutContent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:background="@color/bg_white"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <freedom.nightq.puzzlepicture.widgets.ComposeLayout
+                android:id="@+id/composeLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="240dp" />
+        </LinearLayout>
+    </ScrollView>
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="@dimen/fab_margin"
+        android:src="@android:drawable/ic_dialog_email" />
+
+</RelativeLayout>
+

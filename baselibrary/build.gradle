@@ -1,0 +1,127 @@
+apply plugin: 'com.android.library'
+apply plugin: 'android-apt'
+apply plugin: 'com.github.dcendents.android-maven'
+apply plugin: 'com.jfrog.bintray'
+
+version = "0.1"
+android {
+    compileSdkVersion 23
+    buildToolsVersion "23.0.2"
+
+    defaultConfig {
+        minSdkVersion 14
+        targetSdkVersion 23
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+def AAVersion = '3.3.2'
+
+dependencies {
+
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:appcompat-v7:23.+'
+
+    compile 'com.android.support:support-v4:23.+'
+    compile 'com.android.support:recyclerview-v7:23.+'
+    compile 'com.android.support:multidex:1.0.0'
+
+    compile 'com.android.support:design:23.+'
+    compile 'com.android.support:support-annotations:23.+'
+    apt "org.androidannotations:androidannotations:$AAVersion"
+    // 依赖注入
+    compile "org.androidannotations:androidannotations-api:$AAVersion"
+    compile 'com.commit451:PhotoView:1.2.4'
+    compile 'com.karumi:headerrecyclerview:1.0.3'
+    compile 'com.github.bumptech.glide:glide:3.6.1'
+    compile 'com.karumi:headerrecyclerview:1.0.3'
+    compile 'de.greenrobot:eventbus:2.4.0'
+
+    compile 'com.squareup.retrofit:retrofit:1.9.0'
+    // 网络请求
+    compile 'com.squareup.okhttp:okhttp-urlconnection:2.3.0'
+    // 网络请求
+    compile 'com.squareup.okhttp:okhttp:2.3.0'
+    // 网络请求
+}
+
+
+def siteUrl = 'https://github.com/nightq/Widgets'    // project homepage
+def gitUrl = 'https://github.com/nightq/Widgets.git' // project git
+group = "freedom.nightq.widgets"
+
+install {
+    repositories.mavenInstaller {
+        // This generates POM.xml with proper parameters
+        pom {
+            project {
+                packaging 'aar'
+                name 'TagView'
+                url siteUrl
+                licenses {
+                    license {
+                        name 'The Apache Software License, Version 2.0'
+                        url 'http://www.apache.org/licenses/LICENSE-2.0.txt'
+                    }
+                }
+                developers {
+                    developer {
+                        id 'NightQ'
+                        name 'NightQ'
+                        email 'mdxdd5@gmail.com'
+                    }
+                }
+                scm {
+                    connection gitUrl
+                    developerConnection gitUrl
+                    url siteUrl
+                }
+            }
+        }
+    }
+}
+
+task sourcesJar(type: Jar) {
+    from android.sourceSets.main.java.srcDirs
+    classifier = 'sources'
+}
+
+task javadoc(type: Javadoc) {
+    source = android.sourceSets.main.java.srcDirs
+    classpath += project.files(android.getBootClasspath().join(File.pathSeparator))
+}
+
+task javadocJar(type: Jar, dependsOn: javadoc) {
+    classifier = 'javadoc'
+    from javadoc.destinationDir
+}
+
+artifacts {
+    archives javadocJar
+    archives sourcesJar
+}
+
+
+Properties properties = new Properties()
+properties.load(project.rootProject.file('local.properties').newDataInputStream())
+bintray {
+    user = properties.getProperty("bintray.user")
+    key = properties.getProperty("bintray.apikey")
+    configurations = ['archives']
+    pkg {
+        repo = "maven"
+        name = "TagView"                                                 // #CONFIG# project name in jcenter
+        websiteUrl = siteUrl
+        vcsUrl = gitUrl
+        licenses = ["Apache-2.0"]
+        publish = true
+    }
+}

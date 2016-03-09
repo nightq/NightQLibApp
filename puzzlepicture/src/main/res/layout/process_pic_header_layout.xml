@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layoutContent"
+    android:layout_width="wrap_content"
+    android:layout_height="100dp"
+    android:orientation="horizontal"
+    android:background="@color/transparent" >
+
+    <LinearLayout
+        android:id="@+id/layoutFilter"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginLeft="5dp"
+        android:background="@color/e8ebff" >
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:scaleType="centerInside"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/image_icon_filter" />
+
+        <TextView
+            android:gravity="center"
+            android:singleLine="true"
+            android:paddingLeft="3dp"
+            android:paddingRight="3dp"
+            android:paddingTop="5dp"
+            android:text="@string/process_pic_filter"
+            android:textSize="@dimen/txt_tips_small"
+            android:textColor="@color/bg_black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutSticker"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginLeft="5dp"
+        android:background="@color/e8ebff" >
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:scaleType="centerInside"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/image_icon_sticker" />
+
+        <TextView
+            android:gravity="center"
+            android:singleLine="true"
+            android:paddingLeft="3dp"
+            android:paddingRight="3dp"
+            android:paddingTop="5dp"
+            android:text="@string/process_pic_sticker"
+            android:textSize="@dimen/txt_tips_small"
+            android:textColor="@color/bg_black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/process_pic_header_say"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginLeft="5dp"
+        android:background="@color/e8ebff" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/image_sticker_say" />
+
+        <TextView
+            android:visibility="gone"
+            android:layout_centerInParent="true"
+            android:text="@string/process_pic_say"
+            android:textSize="12sp"
+            android:textColor="@color/bg_black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/process_pic_header_think"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginLeft="5dp"
+        android:background="@color/e8ebff" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/image_sticker_think" />
+
+        <TextView
+            android:visibility="gone"
+            android:paddingLeft="3dp"
+            android:paddingBottom="11dp"
+            android:layout_centerInParent="true"
+            android:text="@string/process_pic_think"
+            android:textSize="12sp"
+            android:textColor="@color/bg_black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/process_pic_header_call"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginLeft="5dp"
+        android:background="@color/e8ebff" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/image_sticker_call" />
+
+        <TextView
+            android:visibility="gone"
+            android:paddingBottom="3dp"
+            android:layout_centerInParent="true"
+            android:text="@string/process_pic_call"
+            android:textSize="12sp"
+            android:textColor="@color/bg_black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/process_pic_header_aside"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginLeft="5dp"
+        android:background="@color/e8ebff" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/image_sticker_aside" />
+
+        <TextView
+            android:visibility="gone"
+            android:paddingLeft="3dp"
+            android:layout_centerInParent="true"
+            android:text="@string/process_pic_aside"
+            android:textSize="12sp"
+            android:textColor="@color/bg_black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layoutCartoonElement"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginLeft="5dp"
+        android:background="@color/e8ebff" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/image_sticker_element" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layoutCartoonFrame"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="@color/e8ebff" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/image_sticker_frame" />
+
+        <TextView
+            android:layout_centerInParent="true"
+            android:text="@string/cartoonFrame2"
+            android:textSize="@dimen/txt_tips"
+            android:textColor="@color/bg_black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,211 @@
+<resources>
+    <declare-styleable name="PxBlurringView">
+        <attr name="blurRadius" format="integer" />
+        <attr name="downsampleFactor" format="integer" />
+        <attr name="overlayColor" format="color" />
+    </declare-styleable>
+
+    <!-- Shimmer View -->
+    <declare-styleable name="ShimmerView">
+        <attr name="reflectionColor" format="color"/>
+    </declare-styleable>
+
+    <!-- CollectionView -->
+    <declare-styleable name="CollectionView">
+        <attr name="internalPadding" format="dimension" />
+        <attr name="cloumNum" format="integer" />
+    </declare-styleable>
+
+    <!-- Material Design -->
+    <declare-styleable name="Switch">
+        <attr name="sw_trackSize" format="reference|dimension"/>
+        <attr name="sw_trackColor" format="reference|color"/>
+        <attr name="sw_trackCap" format="integer">
+            <enum name="butt" value="0x00000000" />
+            <enum name="round" value="0x00000001" />
+            <enum name="square" value="0x00000002" />
+        </attr>
+        <attr name="sw_thumbColor" format="reference|color"/>
+        <attr name="sw_thumbRadius" format="reference|dimension"/>
+        <attr name="sw_thumbElevation" format="reference|dimension"/>
+        <attr name="sw_animDuration" format="reference|integer"/>
+        <attr name="sw_interpolator" format="reference"/>
+        <attr name="android:gravity" />
+        <attr name="android:checked" />
+    </declare-styleable>
+
+    <!-- FastScorller -->
+    <declare-styleable name="AbsRecyclerViewFastScroller">
+        <attr name="rfs_fast_scroller_layout" format="reference" />
+        <attr name="rfs_barColor" format="color|reference" />
+        <attr name="rfs_barBackground" format="reference" />
+        <attr name="rfs_handleColor" format="color|reference" />
+        <attr name="rfs_handleBackground" format="reference" />
+    </declare-styleable>
+    <declare-styleable name="AbsSectionIndicator">
+        <attr name="rfs_section_indicator_layout" format="reference" />
+    </declare-styleable>
+    <declare-styleable name="SectionTitleIndicator">
+        <attr name="rfs_textColor" format="color|reference" />
+        <attr name="rfs_backgroundColor" format="color|reference" />
+    </declare-styleable>
+
+    <!-- BottomSheet -->
+    <declare-styleable name="BottomSheet">
+        <attr name="bottomSheetStyle" format="reference"/>
+        <attr name="bs_dialogBackground" format="color|reference" />
+        <attr name="bs_listStyle" format="reference"/>
+        <attr name="bs_dividerColor" format="color|reference" />
+        <attr name="bs_numColumns" format="integer"/>
+        <attr name="bs_titleTextAppearance" format="reference" />
+        <attr name="bs_listItemTitleTextAppearance" format="reference" />
+        <attr name="bs_gridItemTitleTextAppearance" format="reference" />
+        <attr name="bs_moreDrawable" format="reference"/>
+        <attr name="bs_moreText" format="string"/>
+        <attr name="bs_closeDrawable" format="reference"/>
+        <attr name="bs_collapseListIcons" format="boolean"/>
+    </declare-styleable>
+
+    <!-- PacAvatarView -->
+    <declare-styleable name="PacAvatarView">
+        <attr name="avatarShape">
+            <enum name="round" value="0"/>
+            <enum name="square" value="1"/>
+        </attr>
+        <attr name="avatarTheme">
+            <enum name="line" value="0"/>
+            <enum name="towLine" value="1"/>
+            <enum name="square" value="2"/>
+            <enum name="free" value="3"/>
+            <enum name="multiLine" value="4"/>
+        </attr>
+        <attr name="gravity">
+            <enum name="left" value="0"/>
+            <enum name="right" value="1"/>
+        </attr>
+        <attr name="sideColor" format="color"/>
+        <attr name="overflowColor" format="color"/>
+        <attr name="avatarHeight" format="dimension" />
+        <attr name="freeAvatarTwoBigWidth" format="dimension" />
+        <attr name="freeAvatarTwoSmallWidth" format="dimension" />
+        <attr name="avatarPadding" format="dimension" />
+        <attr name="avatarShowCount" format="integer" />
+        <attr name="defaultAvatar" format="reference" />
+        <attr name="numTextSize" format="dimension" />
+        <attr name="numTextColor" format="color"/>
+        <attr name="numTextStyle">
+            <enum name="normal" value="0"/>
+            <enum name="bold" value="1"/>
+        </attr>
+    </declare-styleable>
+
+    <!-- PacHomapagePhotosLayout -->
+    <declare-styleable name="PacHomepagePhotosLayout">
+        <attr name="column" format="integer" />
+    </declare-styleable>
+
+    <!-- MultiViewPager -->
+    <declare-styleable name="MultiViewPager">
+        <!-- Child view inside a page to match the page size against. -->
+        <attr name="matchChildWidth" format="reference" />
+        <!-- Maximum size. -->
+        <attr name="android:maxWidth" />
+        <!-- Maximum size. -->
+        <attr name="android:maxHeight" />
+    </declare-styleable>
+
+    <declare-styleable name="RoundProgressBar">
+        <attr name="roundColor" format="color"/>
+        <attr name="roundProgressColor" format="color"/>
+        <attr name="roundWidth" format="dimension"></attr>
+        <attr name="textColor" format="color" />
+        <attr name="textSize" format="dimension" />
+        <attr name="max" format="integer"></attr>
+        <attr name="textIsDisplayable" format="boolean"></attr>
+        <attr name="style">
+            <enum name="STROKE" value="0"></enum>
+            <enum name="FILL" value="1"></enum>
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="SubsamplingScaleImageView">
+        <attr name="src" format="reference"/>
+        <attr name="assetName" format="string"/>
+        <attr name="panEnabled" format="boolean"/>
+        <attr name="zoomEnabled" format="boolean"/>
+        <attr name="quickScaleEnabled" format="boolean"/>
+        <attr name="tileBackgroundColor" format="color"/>
+    </declare-styleable>
+
+    <declare-styleable name="PacFAB">
+        <attr name="PacFABSrc" format="reference"/>
+        <attr name="PacFABBGCColor" format="color"/>
+    </declare-styleable>
+
+    <declare-styleable name="PacSubMenu">
+        <attr name="PacSubMenuText" format="string"/>
+        <attr name="PacSubMenuSrc" format="reference"/>
+        <attr name="PacSubMenuColor" format="color"/>
+        <attr name="PacSubMenuWidth" format="dimension"/>
+    </declare-styleable>
+
+    <declare-styleable name="PacLikesView">
+        <attr name="PacLikesView_avatarWidth" format="dimension"/>
+        <attr name="PacLikesView_dividerWidth" format="dimension"/>
+        <attr name="PacLikesView_moreTextSize" format="dimension"/>
+        <attr name="PacLikesView_moreTextColor" format="color"/>
+        <attr name="PacLikesView_moreBGColor" format="color"/>
+        <attr name="PacLikesView_isShowLike" format="boolean"/>
+    </declare-styleable>
+
+    <declare-styleable name="SwitchButton">
+        <attr name="kswThumbDrawable" format="reference"/>
+        <attr name="kswThumbColor" format="color|reference"/>
+        <attr name="kswThumbMargin" format="dimension|reference"/>
+        <attr name="kswThumbMarginTop" format="dimension|reference"/>
+        <attr name="kswThumbMarginBottom" format="dimension|reference"/>
+        <attr name="kswThumbMarginLeft" format="dimension|reference"/>
+        <attr name="kswThumbMarginRight" format="dimension|reference"/>
+        <attr name="kswThumbWidth" format="dimension|reference"/>
+        <attr name="kswThumbHeight" format="dimension|reference"/>
+        <attr name="kswThumbRadius" format="dimension|reference"/>
+        <attr name="kswBackRadius" format="dimension|reference"/>
+        <attr name="kswBackDrawable" format="reference"/>
+        <attr name="kswBackColor" format="color|reference"/>
+        <attr name="kswFadeBack" format="boolean"/>
+        <attr name="kswBackMeasureRatio" format="float"/>
+        <attr name="kswAnimationDuration" format="integer"/>
+        <attr name="kswTintColor" format="color|reference"/>
+    </declare-styleable>
+
+    <declare-styleable name="SearchAvatarView">
+        <attr name="SearchAvatarView_avatarWidth" format="dimension"/>
+        <attr name="SearchAvatarView_avatarMargin" format="dimension"/>
+        <attr name="SearchAvatarView_textSize" format="dimension"/>
+    </declare-styleable>
+
+    <declare-styleable name="SVerticalTextView">
+        <attr name="SVerticalTextView_minTextSize" format="dimension"/>
+        <attr name="SVerticalTextView_maxTextSize" format="dimension"/>
+        <attr name="SVerticalTextView_textColor" format="color"/>
+    </declare-styleable>
+
+    <declare-styleable name="FontManagerItemView">
+        <attr name="FontManagerItemView_icon" format="reference"/>
+    </declare-styleable>
+
+    <declare-styleable name="ClipSquareImageView">
+        <attr name="ClipSquareIV_BorderDistance" format="dimension"/>
+        <attr name="ClipSquareIV_BorderWidth" format="dimension"/>
+        <attr name="ClipSquareIV_BorderColor" format="color"/>
+        <attr name="ClipSquareIV_OutsideColor" format="color"/>
+    </declare-styleable>
+
+    <declare-styleable name="GifView">
+        <attr name="gif" format="reference" />
+        <attr name="paused" format="boolean" />
+    </declare-styleable>
+    <declare-styleable name="CustomTheme">
+        <attr name="gifViewStyle" format="reference" />
+    </declare-styleable>
+</resources>

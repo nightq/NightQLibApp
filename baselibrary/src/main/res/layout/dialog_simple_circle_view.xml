@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center" >
+
+    <ProgressBar
+        android:id="@+id/pgb"
+        style="?android:attr/progressBarStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/dlg_circle_view_bg"
+        android:indeterminateDrawable="@drawable/progress_circle_drawable_define"
+        android:indeterminateDuration="@integer/loading_circle_middle"
+        android:minHeight="28.0dip"
+        android:minWidth="28.0dip" />
+
+</LinearLayout>

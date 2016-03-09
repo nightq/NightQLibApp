@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layoutContent"
+    android:layout_width="wrap_content"
+    android:layout_height="100dp"
+    android:orientation="horizontal"
+    android:background="@color/transparent" >
+
+    <freedom.nightq.baselibrary.widgets.PressImageView
+        android:id="@+id/imageView"
+        android:scaleType="centerInside"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_width="60dp"
+        android:layout_height="100dp"
+        android:background="@color/e8ebff"
+        android:src="@mipmap/btn_icon_back_normal" />
+
+</LinearLayout>

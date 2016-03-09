@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="UserDefaultFolders" >
+        <item>各种证件</item>
+        <item>学习必备</item>
+        <item>旅行美景</item>
+        <item>装B必备</item>
+        <item>其他收藏</item>
+        <item>自拍美照</item>
+        <item>孩子的照片</item>
+        <item>医疗报告</item>
+    </string-array>
+
+    <string-array name="UserDefaultFoldersEmpty" >
+        <item>身份证、户口本、各种登记照等所有证件，随时调出，并能快速发送给任何人</item>
+        <item>不管是书上的还是黑板上的，直接拍下来，加个关键字，永远也忘不掉了</item>
+        <item>永久收藏你的旅行图片，并和你的旅伴和好友一起分享</item>
+        <item>发朋友圈时用的到的，你懂的！</item>
+        <item>所有你值得收藏的杂七杂八，先丢进来再说</item>
+        <item>各个时期的自拍美（Shuai）照全在这里，把妹子、钓帅哥，注册各种网站随用随调</item>
+        <item>把爸爸、妈妈，爷爷、奶奶不同手机里孩子的照片汇聚在一起，无缝链接，永久保存</item>
+        <item>把你历年的医疗检查报告拍下来，分类到这里，下次看医生可以马上拿出来</item>
+    </string-array>
+</resources>

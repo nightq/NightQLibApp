@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="imageFilterName">
+        <item>NORMAL</item>
+        <item>MULBERRY</item>
+        <item>PERPETUA</item>
+        <item>MOON</item>
+        <item>AMARO</item>
+
+        <item>RISE</item>
+        <item>X-PRO</item>
+        <item>DRIFT</item>
+        <item>WILLOW</item>
+        <item>NOSTALGIA</item>
+
+        <item>BRANNAN</item>
+        <item>DREAMY</item>
+        <item>INKWELL</item>
+        <item>NASHVILLE</item>
+        <item>LOMO</item>
+
+        <item>GLACLER</item>
+        <item>LATENT</item>
+        <item>SUTRO</item>
+        <item>TOASTER</item>
+        <item>SUNSET</item>
+
+        <item>1977</item>
+        <item>KELVIN</item>
+        <item>REVEN</item>
+    </string-array>
+
+    <integer-array name="imageFilterIcon">
+        <item>@mipmap/filter_thumb_normal</item>
+        <item>@mipmap/filter_thumb_mulberry</item>
+        <item>@mipmap/filter_thumb_perpetua</item>
+        <item>@mipmap/filter_thumb_moon</item>
+        <item>@mipmap/filter_thumb_amaro</item>
+
+        <item>@mipmap/filter_thumb_rise</item>
+        <item>@mipmap/filter_thumb_x_pro</item>
+        <item>@mipmap/filter_thumb_drift</item>
+        <item>@mipmap/filter_thumb_willow</item>
+        <item>@mipmap/filter_thumb_nostalgia</item>
+
+        <item>@mipmap/filter_thumb_brannan</item>
+        <item>@mipmap/filter_thumb_dreamy</item>
+        <item>@mipmap/filter_thumb_inkwell</item>
+        <item>@mipmap/filter_thumb_nashville</item>
+        <item>@mipmap/filter_thumb_lomo</item>
+
+        <item>@mipmap/filter_thumb_glacler</item>
+        <item>@mipmap/filter_thumb_latent</item>
+        <item>@mipmap/filter_thumb_sutro</item>
+        <item>@mipmap/filter_thumb_toaster</item>
+        <item>@mipmap/filter_thumb_sunset</item>
+
+        <item>@mipmap/filter_thumb_1977</item>
+        <item>@mipmap/filter_thumb_kelvin</item>
+        <item>@mipmap/filter_thumb_reven</item>
+    </integer-array>
+
+    <integer-array name="pendantIcons">
+    </integer-array>
+
+    <integer-array name="shareIcons">
+        <item>@mipmap/fb</item>
+        <!--<item>@mipmap/line</item>-->
+        <item>@mipmap/twitter</item>
+        <!--<item>@mipmap/qq_zone</item>-->
+        <!--<item>@mipmap/qq</item>-->
+        <item>@mipmap/weibo</item>
+        <item>@mipmap/wechat</item>
+        <item>@mipmap/circle</item>
+        <!--<item>@mipmap/email</item>-->
+        <!--<item>@mipmap/instagram</item>-->
+    </integer-array>
+
+    <integer-array name="likeIcons">
+        <item>@mipmap/image_emo_like_big</item>
+        <item>@mipmap/image_emo_love_big</item>
+        <item>@mipmap/image_emo_haha_big</item>
+        <item>@mipmap/image_emo_exciting_big</item>
+        <item>@mipmap/image_emo_wish_big</item>
+        <item>@mipmap/image_emo_boring_big</item>
+    </integer-array>
+
+    <string-array name="likeNames">
+        <item>image_emo_like</item>
+        <item>image_emo_love</item>
+        <item>image_emo_haha</item>
+        <item>image_emo_exciting</item>
+        <item>image_emo_wish</item>
+        <item>image_emo_boring</item>
+    </string-array>
+
+    <integer-array name="moodPngIcons">
+        <item>@mipmap/image_emotion_smile</item>
+        <item>@mipmap/image_emotion_smirk</item>
+        <item>@mipmap/image_emotion_flushed</item>
+        <item>@mipmap/image_emotion_yum</item>
+        <item>@mipmap/image_emotion_joy</item>
+
+        <item>@mipmap/image_emotion_sleepy</item>
+        <item>@mipmap/image_emotion_weary</item>
+        <item>@mipmap/image_emotion_mask</item>
+        <item>@mipmap/image_emotion_open_mouth</item>
+        <item>@mipmap/image_emotion_sweat</item>
+
+        <item>@mipmap/image_emotion_scream</item>
+        <item>@mipmap/image_emotion_cold_sweat</item>
+        <item>@mipmap/image_emotion_sob</item>
+        <item>@mipmap/image_emotion_cry</item>
+        <item>@mipmap/image_emotion_rage</item>
+    </integer-array>
+
+    <integer-array name="moodGifIcons">
+        <item>@drawable/image_emotion_smile</item>
+        <item>@drawable/image_emotion_smirk</item>
+        <item>@drawable/image_emotion_flushed</item>
+        <item>@drawable/image_emotion_yum</item>
+        <item>@drawable/image_emotion_joy</item>
+
+        <item>@drawable/image_emotion_sleepy</item>
+        <item>@drawable/image_emotion_weary</item>
+        <item>@drawable/image_emotion_mask</item>
+        <item>@drawable/image_emotion_open_mouth</item>
+        <item>@drawable/image_emotion_sweat</item>
+
+        <item>@drawable/image_emotion_scream</item>
+        <item>@drawable/image_emotion_cold_sweat</item>
+        <item>@drawable/image_emotion_sob</item>
+        <item>@drawable/image_emotion_cry</item>
+        <item>@drawable/image_emotion_rage</item>
+    </integer-array>
+
+    <string-array name="moodIconNames">
+        <item>image_emotion_smile</item>
+        <item>image_emotion_smirk</item>
+        <item>image_emotion_flushed</item>
+        <item>image_emotion_yum</item>
+        <item>image_emotion_joy</item>
+
+        <item>image_emotion_sleepy</item>
+        <item>image_emotion_weary</item>
+        <item>image_emotion_mask</item>
+        <item>image_emotion_open_mouth</item>
+        <item>image_emotion_sweat</item>
+
+        <item>image_emotion_scream</item>
+        <item>image_emotion_cold_sweat</item>
+        <item>image_emotion_sob</item>
+        <item>image_emotion_cry</item>
+        <item>image_emotion_rage</item>
+    </string-array>
+</resources>

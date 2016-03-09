@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><resources>
+    <color name="txt_hintGray">@color/timehut_lightGray</color>
+    <color name="divide">#DDDDDD</color>
+    <color name="img_loading_bg">@color/btn_white_press</color>
+    <color name="bg_white">@android:color/white</color>
+    <color name="bg_white_50">#7fffffff</color>
+    <color name="bg_black">@android:color/black</color>
+    <color name="bg_black_70">#B2000000</color>
+    <color name="app_main_color">#6478ff</color>
+    <color name="app_main_darkColor">#5064eb</color>
+    <color name="phone_plus_red">#FF3C3C</color>
+    <color name="btn_white_normal">@color/bg_white</color>
+    <color name="btn_white_press">#EFEFEF</color>
+
+    <color name="timehut_gray">#dddddd</color>
+    <color name="timehut_blue">#3ccdb1</color>
+    <color name="timehut_blue_press">#00bea5</color>
+
+    <color name="timehut_txt_drakGray">#575757</color>
+    <color name="timehut_lightGray">#B5B5B5</color>
+    <color name="transparent">#00000000</color>
+    <color name="dlg_background">#88000000</color>
+    <color name="white_alpha_ninety">#e6ffffff</color>
+</resources>
