@@ -136,6 +136,9 @@ public class ProcessPicsActivity extends BaseActivity
      */
     @Override
     public int getDataCount () {
+        if (mUIHelper != null && mUIHelper.mData != null) {
+            return mUIHelper.mData.mPicList.size();
+        }
         return 0;
     }
 
