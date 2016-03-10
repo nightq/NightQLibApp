@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?><resources xmlns:tools="http://schemas.android.com/tools">
 
-    <style name="AppTheme.MaterialColdStart">
-        <item name="android:windowBackground">@mipmap/image_launch</item>
+    <style name="AppThemeBase.MaterialColdStart">
     </style>
 
-    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+    <style name="AppThemeBase" parent="Theme.AppCompat.Light.DarkActionBar">
         <item name="android:textSize">@dimen/txt_normal</item>
         <!-- Customize your theme here. -->
     </style>
@@ -48,14 +47,14 @@
         <item name="android:textColor">@color/timehut_blue</item>
     </style>
 
-    <style name="FullScreen" parent="AppTheme">
+    <style name="FullScreen" parent="AppThemeBase">
         <item name="windowNoTitle">true</item>
         <item name="windowActionBar">false</item>
         <item name="android:windowFullscreen">true</item>
         <item name="android:windowContentOverlay">@null</item>
     </style>
 
-    <style name="Translucent" parent="AppTheme">
+    <style name="Translucent" parent="AppThemeBase">
         <item name="android:windowNoTitle">true</item>
         <item name="android:windowBackground">@android:color/transparent</item>
         <item name="android:colorBackgroundCacheHint">@null</item>

@@ -3,7 +3,7 @@ package freedom.nightq.puzzlepicture.model;
 /**
  * Created by H3c on 5/22/15.
  * 传送数据到图片处理的地方
- * @edit nightq
+ * edit nightq
  */
 public class ToProcessPicEvent {
     public ProcessComposeModel mData;

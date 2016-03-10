@@ -22,7 +22,7 @@ public class BitmapCacheUtil {
     private static ConcurrentMap<String, SoftReference<Bitmap>> processPicCache = new ConcurrentHashMap<>();
 
     /**
-     * @UIThread
+     * UIThread
      * @return
      */
     public static Bitmap getValidBmpFromCache(ProcessPicModel model) {
@@ -34,7 +34,7 @@ public class BitmapCacheUtil {
 
 
     /**
-     * @UIThread
+     * UIThread
      * @return
      */
     public static Bitmap getValidBmpFromCache(String imageKey) {
@@ -48,7 +48,6 @@ public class BitmapCacheUtil {
     }
 
     /**
-     * @return
      */
     public static void saveValidBmpToCache(String key, Bitmap bmp) {
         if (bmp == null || bmp.isRecycled() || TextUtils.isEmpty(key)) {

@@ -29,6 +29,7 @@ dependencies {
     apt "org.androidannotations:androidannotations:$AAVersion"
     compile project(':baselibrary')
     compile project(':puzzlepicture')
+    compile project(':tagview')
 }
 
 apt {

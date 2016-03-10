@@ -151,7 +151,6 @@ public class ProcessPicsComposeActivity extends BaseActivity
 
     @AfterViews
     void initView() {
-
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -480,8 +479,6 @@ public class ProcessPicsComposeActivity extends BaseActivity
         Intent intent = new Intent(this, ProcessPicsActivity_.class);
         intent.putExtra("hasAnim", false);
         startActivityForResult(intent, Constants.ACTIVITY_PUBLISH);
-        startActivity(intent);
-        finish();
     }
     /**
      * 添加图，并附上已选的图

@@ -30,7 +30,9 @@ public class ProcessPicActivityHelper implements
         ViewPager.OnPageChangeListener {
     // 保存滤镜结果的图片，是一个临时文件，当用户正式上传完成之后把这个文件复制到照相机文件夹里即可
     // 主要为了避免用户多次修改滤镜，导致产生多次结果图片
-    public static final String TMP_RESULT_PHOTO_PATH = StorageUtils.getAppTmpCacheDir() + "/tmpFilterResultPhoto";
+    public static String getTmpProcessPath () {
+        return StorageUtils.getAppTmpCacheDir() + "/tmpFilterResultPhoto";
+    }
     // context
     ProcessPicsActivity mProcessPicsActivity;
 
@@ -329,7 +331,7 @@ public class ProcessPicActivityHelper implements
                     mData,
                     ComposeUtil.TargetComposeWidth,
                     ComposeUtil.TargetComposeHeight,
-                    TMP_RESULT_PHOTO_PATH);
+                    getTmpProcessPath());
             if (!FileUtils.isFileExist(path)) {
                 return false;
             }

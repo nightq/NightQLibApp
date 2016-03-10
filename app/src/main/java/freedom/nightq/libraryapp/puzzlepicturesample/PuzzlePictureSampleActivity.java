@@ -1,4 +1,4 @@
-package freedom.nightq.libraryapp;
+package freedom.nightq.libraryapp.puzzlepicturesample;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -18,71 +18,47 @@ import de.greenrobot.event.EventBus;
 import freedom.nightq.baselibrary.os.BaseActivity;
 import freedom.nightq.baselibrary.threadPool.NormalEngine;
 import freedom.nightq.baselibrary.utils.FileUtils;
+import freedom.nightq.libraryapp.R;
 import freedom.nightq.puzzlepicture.ProcessPicsComposeActivity_;
 import freedom.nightq.puzzlepicture.model.ProcessComposeModel;
 import freedom.nightq.puzzlepicture.model.ToProcessPicEvent;
 
-public class SampleActivity extends BaseActivity {
+public class PuzzlePictureSampleActivity extends BaseActivity {
 
     int ACTIVITY_GET_AVATAR = 1000;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.puzzle_sample_activity);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-       FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
+        findViewById(R.id.btnPuzzle).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
-                startActivity(new Intent(SampleActivity.this, ProcessPicsComposeActivity_.class));
+                try {
+                    Intent intent = new Intent();
+                    intent.setType("image/*");
+                    intent.setAction(Intent.ACTION_GET_CONTENT);
+                    intent.addCategory(Intent.CATEGORY_OPENABLE);
+                    startActivityForResult(intent, ACTIVITY_GET_AVATAR);
+                } catch (Exception ex) {
+                    finish();
+                }
             }
         });
     }
 
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_main, menu);
-        return true;
-    }
-
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
-        int id = item.getItemId();
-
-        //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            try {
-                Intent intent = new Intent();
-                intent.setType("image/*");
-                intent.setAction(Intent.ACTION_GET_CONTENT);
-                intent.addCategory(Intent.CATEGORY_OPENABLE);
-                startActivityForResult(intent, ACTIVITY_GET_AVATAR);
-            } catch (Exception ex) {
-                finish();
-            }
-            return true;
-        }
-
-        return super.onOptionsItemSelected(item);
-    }
 
     @Override
     protected void onActivityResult(int requestCode, int resultCode, final Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
-        if(resultCode != Activity.RESULT_OK) {
+        if (resultCode != Activity.RESULT_OK) {
             return;
         }
 
-            NormalEngine.getInstance().submit(new Runnable() {
+        NormalEngine.getInstance().submit(new Runnable() {
             @Override
             public void run() {
                 Uri selectedImageURI = data.getData();
@@ -95,7 +71,7 @@ public class SampleActivity extends BaseActivity {
                     );
                     ToProcessPicEvent toProcessPicEvent = new ToProcessPicEvent(processComposeModel, 0);
                     EventBus.getDefault().postSticky(toProcessPicEvent);
-                    startActivity(new Intent(SampleActivity.this, ProcessPicsComposeActivity_.class));
+                    startActivity(new Intent(PuzzlePictureSampleActivity.this, ProcessPicsComposeActivity_.class));
                 }
             }
         });

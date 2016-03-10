@@ -20,3 +20,11 @@ allprojects {
 task clean(type: Delete) {
     delete rootProject.buildDir
 }
+
+project.ext {
+    userId = 'NightQ'
+    userName = 'NightQ'
+    userEmail = 'mdxdd5@gmail.com'
+    mavenGroup = "freedom.nightq.library"
+    mavenGit = 'https://github.com/nightq/NightQLibApp.git'
+}

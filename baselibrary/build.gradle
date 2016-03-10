@@ -54,9 +54,10 @@ dependencies {
 }
 
 
-def siteUrl = 'https://github.com/nightq/Widgets'    // project homepage
-def gitUrl = 'https://github.com/nightq/Widgets.git' // project git
-group = "freedom.nightq.widgets"
+def siteUrl = 'https://github.com/nightq/NightQLibApp/tree/master/baselibrary'    // project homepage
+def libraryName = 'baselibrary' // project git
+def gitUrl = rootProject.ext.mavenGit // project git
+group = rootProject.ext.mavenGroup
 
 install {
     repositories.mavenInstaller {
@@ -64,7 +65,7 @@ install {
         pom {
             project {
                 packaging 'aar'
-                name 'TagView'
+                name libraryName
                 url siteUrl
                 licenses {
                     license {
@@ -74,9 +75,9 @@ install {
                 }
                 developers {
                     developer {
-                        id 'NightQ'
-                        name 'NightQ'
-                        email 'mdxdd5@gmail.com'
+                        id rootProject.ext.userId
+                        name rootProject.ext.userName
+                        email rootProject.ext.userEmail
                     }
                 }
                 scm {
@@ -118,7 +119,7 @@ bintray {
     configurations = ['archives']
     pkg {
         repo = "maven"
-        name = "TagView"                                                 // #CONFIG# project name in jcenter
+        name = libraryName                                                 // #CONFIG# project name in jcenter
         websiteUrl = siteUrl
         vcsUrl = gitUrl
         licenses = ["Apache-2.0"]

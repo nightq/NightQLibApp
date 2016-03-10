@@ -44,9 +44,7 @@ public class ProcessPictureFragment extends BaseV4Fragment {
     @ViewById(resName="process_pic_border")
     public ImageView borderIV;
 
-    /**
-     * 位置
-     */
+    // 位置
     public int position;
 
     // helper

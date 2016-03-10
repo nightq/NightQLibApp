@@ -13,7 +13,6 @@ import android.view.View;
 import android.view.ViewTreeObserver;
 import android.widget.ImageView;
 
-import freedom.nightq.puzzlepicture.BuildConfig;
 import freedom.nightq.puzzlepicture.model.PositionScaleModel;
 import freedom.nightq.puzzlepicture.model.ProcessPicModel;
 import freedom.nightq.puzzlepicture.utils.ComposeUtil;
@@ -28,9 +27,7 @@ import static android.view.MotionEvent.ACTION_DOWN;
  * 2.是多边形，必须设置
  * @see #setPathAndPosModel(Path, ProcessPicModel) 设置裁切的路径和图片缩放偏移的位置
  * 废弃之前的这两个
- * @Deprecated
  * @see #setPath(Path)
- * @Deprecated
  * @see #setDefaultModel(ProcessPicModel)
  */
 public class PolygonImageView extends ImageView
@@ -305,13 +302,6 @@ public class PolygonImageView extends ImageView
 //            canvas.drawColor(Color.RED);
         }
         super.onDraw(canvas);
-        if (BuildConfig.DEBUG) {
-//            if (mPath != null) {
-//                mPaint.setColor(Color.RED);
-//                canvas.drawPath(mPath, mPaint);
-//            }
-        }
-
 //         漫画边框
 //        mProcessPicModel.drawCartoonBorder(canvas);
     }

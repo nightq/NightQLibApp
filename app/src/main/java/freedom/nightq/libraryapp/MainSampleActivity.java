@@ -1,52 +1,37 @@
 package freedom.nightq.libraryapp;
 
+import android.content.Intent;
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
-import android.view.Menu;
-import android.view.MenuItem;
 
-public class MainSampleActivity extends AppCompatActivity {
+import freedom.nightq.libraryapp.puzzlepicturesample.PuzzlePictureSampleActivity;
+import freedom.nightq.libraryapp.tagSample.widgets.AddTagViewActivity;
+import freedom.nightq.libraryapp.tagSample.widgets.TagSampleMainActivity;
+
+public class MainSampleActivity extends AppCompatActivity implements View.OnClickListener {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main_sample);
+        setContentView(R.layout.main_sample_activity);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-       FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
-            }
-        });
+        findViewById(R.id.btnPuzzle).setOnClickListener(this);
+        findViewById(R.id.btnTagView).setOnClickListener(this);
     }
 
     @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_main_sample, menu);
-        return true;
-    }
-
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
-        int id = item.getItemId();
-
-        //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            return true;
+    public void onClick(View v) {
+        switch (v.getId()) {
+            case R.id.btnPuzzle:
+                startActivity(new Intent(this, PuzzlePictureSampleActivity.class));
+                break;
+            case R.id.btnTagView:
+                startActivity(new Intent(this, TagSampleMainActivity.class));
+                break;
         }
-
-        return super.onOptionsItemSelected(item);
     }
 }

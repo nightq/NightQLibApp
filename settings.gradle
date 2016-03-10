@@ -1,1 +1,1 @@
-include ':app', ':baselibrary', ':puzzlepicture'
+include ':app', ':baselibrary', ':puzzlepicture', ':tagview'

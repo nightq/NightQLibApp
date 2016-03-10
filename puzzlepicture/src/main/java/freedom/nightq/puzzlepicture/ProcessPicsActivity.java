@@ -17,6 +17,7 @@ import org.androidannotations.annotations.EActivity;
 import org.androidannotations.annotations.Extra;
 import org.androidannotations.annotations.ViewById;
 
+import de.greenrobot.event.EventBus;
 import freedom.nightq.baselibrary.dialogs.SimpleDialogTwoBtn;
 import freedom.nightq.baselibrary.os.BaseActivity;
 import freedom.nightq.baselibrary.utils.FileUtils;
@@ -31,6 +32,7 @@ import freedom.nightq.baselibrary.widgets.SwipeViewPager;
 import freedom.nightq.puzzlepicture.fragment.ProcessPictureFragment;
 import freedom.nightq.puzzlepicture.model.ProcessComposeModel;
 import freedom.nightq.puzzlepicture.model.ProcessPicModel;
+import freedom.nightq.puzzlepicture.model.ToProcessPicEvent;
 import freedom.nightq.puzzlepicture.utils.Constants;
 
 /**
@@ -75,13 +77,26 @@ public class ProcessPicsActivity extends BaseActivity
     void init() {
         mUIHelper.initAfterView();
 
-        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
+        findViewById(R.id.btnSave).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 //todo
                 if (mUIHelper != null) {
                     mUIHelper.publishClick();
+                }
+            }
+        });
+
+        findViewById(R.id.btnEdit).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if (mUIHelper != null) {
+                    EventBus.getDefault().postSticky(
+                            new ToProcessPicEvent(mUIHelper.mData, 0));
+                    Intent intent = new Intent(ProcessPicsActivity.this, ProcessPicsComposeActivity_.class);
+                    intent.putExtra("action", ProcessPicsActivity.class.getName());
+                    // 选择版式
+                    startActivityForResult(intent, Constants.ACTIVITY_MODIFY_TAG);
                 }
             }
         });
@@ -121,9 +136,6 @@ public class ProcessPicsActivity extends BaseActivity
      */
     @Override
     public int getDataCount () {
-        if (mUIHelper != null && mUIHelper.mData != null) {
-            return mUIHelper.mData.mPicList.size();
-        }
         return 0;
     }
 
@@ -141,8 +153,7 @@ public class ProcessPicsActivity extends BaseActivity
     public void onClickControlForMul (View view) {
         int i = view.getId();
         if (i == R.id.imgBackForMul) {
-            onBackPressed(false);
-
+            onBackPressed();
         } else if (i == R.id.imgNextForMul) {
             if (mUIHelper != null
                     && mUIHelper.mData != null
@@ -194,29 +205,6 @@ public class ProcessPicsActivity extends BaseActivity
 
     @Override
     public void onBackPressed() {
-        onBackPressed(true);
-    }
-
-    public void onBackPressed(boolean processControlBar) {
-        if(getDataCount() < 2) {
-            SimpleDialogTwoBtn exitDialog = new SimpleDialogTwoBtn(this, new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    realBack();
-                }
-            });
-
-            exitDialog.setDefMsgContent(StringUtils.getStringFromRes(R.string.picComposeExitConfirm));
-            exitDialog.setCancelContent(StringUtils.getStringFromRes(R.string.cancel));
-            exitDialog.setConfirmContent(StringUtils.getStringFromRes(R.string.ok));
-            exitDialog.show();
-        } else {
-            realBack();
-        }
-    }
-
-    public void realBack() {
-        setResult(RESULT_CANCELED);
         super.onBackPressed();
     }
 

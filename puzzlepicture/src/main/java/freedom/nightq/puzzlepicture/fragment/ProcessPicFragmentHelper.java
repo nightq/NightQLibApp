@@ -197,7 +197,7 @@ public class ProcessPicFragmentHelper implements
 
     /**
      * 加载滤镜贴纸 bmp
-     * @UIThread
+     * UIThread
      */
     public void loadFilterAndPendantBmp () {
         setPolygonView();
